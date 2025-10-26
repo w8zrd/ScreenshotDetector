@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screenshot Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container glass-card">
+    <h1>📱 Screenshot Detector</h1>
+    <div class="upload-box" id="dropZone">
+      <p>Drop your image here or click below to upload</p>
+      <label for="fileInput" class="upload-btn">Choose an image</label>
+      <input type="file" id="fileInput" accept="image/*">
+    </div>
+    <div id="result"></div>
+    <div id="preview"></div>
+    <div class="hint">All analysis runs locally in your browser. Nothing is uploaded.</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

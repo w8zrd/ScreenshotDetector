@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Inter, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+    color: #f9f9f9;
+  }
+}
+
+.glass-card {
+  backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.upload-box {
+  border: 2px dashed rgba(255,255,255,0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #007aff;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #007aff;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+#preview img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #007aff;
+  border-radius: 3px;
+  margin-top: 1rem;
+  width: 0%;
+  transition: width 0.4s ease;
+}
